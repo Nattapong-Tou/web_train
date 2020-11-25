@@ -1,0 +1,91 @@
+<!-- tag.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag</title>
+</head>
+<body>
+    <h1>การใช้ Tag if - else</h1>
+    <h3>
+    <div>ทดสอบ if  ง่ายๆ</div>
+    {% if 1 == 1 %}
+        <div>ค่าเท่ากัน</div>
+    {% endif %}
+    
+
+    {% if b > 5 %}
+        <div>b มีค่ามากกว่า 5</div>
+    {% endif %}
+    
+
+    <div>ตรวจสอบคะแนน / เกรดที่ได้</div>
+    <div> คะแนนของคุณคือ : {{ score }} </div>
+    {% if score <= 49 %}
+        <div>Grade F !!!</div>
+    {% elif score <= 59 %}
+        <div>Grade D !!!</div>
+    {% elif score <= 69 %}
+        <div>Grade C !!!</div>
+    {% elif score <= 79 %}
+        <div>Grade B !!!</div>
+    {% elif score >= 80  and score <= 100%}
+        <div>Grade A !!!</div>
+    {% elif score > 100  %}
+        <div>Data is not imposible.</div>
+    {% endif %}
+
+    <div>ผลการแข่งขันฟุตบอล</div>
+    <div>
+        {% if home_goal > guest_goal %}
+            ทีมเจ้าบ้านชนะ
+        {% elif home_goal < guest_goal %}
+            ทีมเยือนชนะ
+        {% else %}
+            เสมอกัน
+        {% endif %}
+    </div>
+    <hr>
+
+    <h1>การใช้ Tag loop</h1>
+    {% for i in rang %}
+        <div> {{ i }} </div>
+    {% endfor %}
+
+    {% for i in rang reversed %}
+        <div> {{ i }} </div>
+    {% endfor %}
+
+   
+    <ul>
+        {% for item in list %}
+            <li> {{ item }} </li>
+        {% endfor %}
+    </ul>
+
+    {% for i in list_test %}
+        
+        {% empty %}
+        <div>This empty tag..</div>
+    {% endfor %}
+
+    {% for i in  rang %}
+    {% cycle 'one' 'two' 'three' 'four' %}
+        <div> {{ i }} </div>
+    {% endfor %}
+
+
+    </h3>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

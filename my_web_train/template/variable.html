@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h3>
+        <div>{{ message }}</div><br>
+        <div>ผมชื่อ {{ name }}</div>
+        <div>ทำงานที่บริษัท {{ company }}</div>
+        <div>เบอร์โทร {{ tel }}</div>
+        <div>Email {{ email }}</div>
+        <hr>
+        <div>แสดงค่าตัวแปรแบบ list</div>
+        <div>{{ color.0 }}</div>
+        <div>{{ color.1 }}</div>
+        <div>{{ color.2 }}</div><br>
+        <div>{{ car.t }}</div>
+        <div>{{ car.h }}</div>
+        <div>{{ car.a }}</div><br>
+        <div>วันนี้วันที่ : {{ date }} </div>
+        <div>วันที่ : {{ date.day }} </div>
+        <div>เดือน : {{ date.month }} </div>
+        <div>ปี : {{ date.year }}</div>
+        
+    </h3>
+    
+</body>
+</html>
+
+<!-- comment in HTML --> 
+{# comment  แบบบรรทัดเดียว #}
+{% comment %}
+    asfasdfasdfa
+
+{% endcomment %}
+

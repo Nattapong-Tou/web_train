@@ -1,0 +1,81 @@
+
+
+- Create virtualenv [/]
+- Install Django [/]
+- Create Project [/]
+- Create django app [/]
+- Create super user django (user admin) [/]
+- อธิบายโครงสร้างเว็บแบบ SPA [/]
+- อธิบายโครงสร้าง urls, view, model, template [/]
+- อธิบาย file urls.py, view.py [/]
+- create file views.py [/]
+- การใช้ urls.py ร่วมกับ views.py [/]
+- ทดสอบ HTTP Response [/]
+- ทดสอบ Home page [/]
+- startapp [/]
+- static path [/]
+- parameter path [/]
+- regular expression path [/]
+- การตั้งชื่อให้กับ path [/]
+- การรับส่งข้อมูลแบบ query String [/]
+- template [/]
+	อธิบาย concept template [/]
+	สร้าง folder template ใน startapp [/]
+	setting path directory in file setting.py [/]
+	สร้าง file HTML เพื่อแสดงผล (index.html) [/]
+- Django Template Language [/]
+	{{ ตัวแปร }}, {% tag คำสั่งต่างๆ %}, {{variable | filter}}
+- การแทรกค่าตัวแปร  >> test.html [/]
+- tag คำสั่งต่างๆ [/]
+	- tag if - else [/] = {% if ... > < == != %} {% elif %} {% else %} {% endif %}
+	- tag for - loop [/] = {% for %} , {% empty %}, {% cycle 'dada' 'data2' .... %}
+- การใช้  variable | filter [/] <variable>|<filter>:<argument>
+	- filter string / list / number [/]
+	- filter number [/] 
+	- filter URL [/]  urlize, urlizetrunc
+	- filter datetime [x]
+- การใช้ template ร่วมกัน [x]
+	
+
+
+	คำสั่ง Django Web
+django-admin startproject -- ชื่อ project -- .  === แบบที่ 1
+django-admin startproject -- ชื่อ project --   === แบบที่ 2
+
+ 	Run server
+python(windows)/python3(Mac/linux/unix) manage.py runserver
+
+	Migrate / Migrations : การอัพเดท directory / Path ใน project
+python(windows)/python3(Mac/linux/unix) manage.py migrate === 1
+python(windows)/python3(Mac/linux/unix) manage.py makemigrations === 2
+
+	command create app ภายใต้ Django project
+python(windows)/python3(Mac/linux/unix) manage.py startapp ...appname...
+
+	command create super user
+python(windows)/python3(Mac/linux/unix) manage.py createsuperuser
+	superuser
+	user : admin
+	pass 123456
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

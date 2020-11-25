@@ -1,0 +1,69 @@
+<!-- tag.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <h1>การใช้ filter แบบ sample </h1>
+    <h3>
+        {% comment %}
+        Filter default ของ x คือ {{ x|default:1 }}<br>
+        default if None คือ {{ none|default_if_none:2 }}<br>
+        Filter Add String คือ {{ str|add:str }}<br>
+        Filter Add Integer is {{ int|add:100 }}<br>
+        {% if str|length_is:0 %}
+            String is empty..
+        {% else %}
+            Length string is {{ str|length }}
+        {% endif %}
+        {% endcomment %}
+    </h3><hr>
+
+    <h1>การใช้ filter ตัวเลข </h1>
+    <h3>
+    {%comment%}
+        {% if haha|divisibleby:5 %}
+            ตัวแปร {{haha}} หารด้วย 5 ลงตัว<br>
+        {% endif %}
+
+        {% if number2|divisibleby:2 %}
+            ตัวแปร {{number2}} หารด้วย 2 ลงตัว<br>
+        {% else %}
+            ตัวแปร {{number2}} หารด้วย 2 ไม่ลงตัว<br>
+        {% endif %}
+
+        การใช้ filesizeformat  {{ file_size }}  byte >> {{file_size|filesizeformat}}<br>
+        {{int}} >> {{int|floatformat}}<br>
+        {{int}} >> {{int|floatformat:2}}<br>
+        {{int}} >> {{int|floatformat:1}}<br>
+     {%endcomment%}
+        <hr>
+
+        <div> <h2>Filter เกี่ยวกับ URL </h2></div>
+        {{str1|urlize}}<br>
+        {{str2|urlize}}<br>
+        {{str3|urlizetrunc:30}}<br>
+
+
+        
+    </h3>
+
+   
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
